@@ -8,7 +8,52 @@ import {
   faTiktok,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
+type Contact = {
+  name: string;
+  className: string;
+  href: string;
+  icon: any;
+};
+const contacts: Contact[] = [
+  {
+    name: "Email",
+    className: "bg-yellow-500 hover:bg-yellow-600",
+    href: "mailto:tarot1754443943@gmail.com",
+    icon: faEnvelope,
+  },
+  {
+    name: "Github",
+    className: "bg-black hover:bg-gray-800/90",
+    href: "https://github.com/erich2s",
+    icon: faGithub,
+  },
+  {
+    name: "X",
+    className: "bg-black hover:bg-gray-800/90",
+    href: "https://twitter.com/erich2s",
+    icon: faXTwitter,
+  },
+  {
+    name: "Instagram",
+    className: "bg-pink-500 hover:bg-pink-600",
+    href: "https://www.instagram.com/eric.h2s/",
+    icon: faInstagram,
+  },
+  {
+    name: "TikTok",
+    className: "bg-black hover:bg-gray-800/90",
+    href: "https://www.tiktok.com/@eric_h2s",
+    icon: faTiktok,
+  },
+];
 export default function hero() {
   return (
     <main className="container my-10 flex flex-col items-center justify-center md:my-4">
@@ -27,7 +72,7 @@ export default function hero() {
       </div>
       <h1 className="font-bold">Developer 🧑🏻‍💻</h1>
       <h1 className="font-bold">Photographer 📸</h1>
-      <section className="mt-8 flex w-[80%] flex-col gap-2 text-center lg:w-[60%]">
+      <section className="mt-8 flex w-full flex-col gap-2 text-center lg:w-[60%]">
         <p>
           Welcome to my personal page! My name is Eric Huang and my Chinese name
           is
@@ -43,39 +88,28 @@ export default function hero() {
       </section>
 
       <section className="my-12 flex gap-4" id="socials">
-        <Button className="bg-yellow-500 hover:bg-yellow-600" asChild>
-          <a href="mailto:tarot1754443943@gmail.com" target="_blank">
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              color="white"
-              className="w-fit"
-            />
-          </a>
-        </Button>
-        <Button className="bg-black hover:bg-gray-800/90" asChild>
-          <a href="https://github.com/erich2s" target="_blank">
-            <FontAwesomeIcon icon={faGithub} color="white" className="w-fit" />
-          </a>
-        </Button>
-        <Button className="bg-black hover:bg-gray-800/90" asChild>
-          <a href="https://twitter.com/erich2s" target="_blank">
-            <FontAwesomeIcon icon={faXTwitter} className="w-fit" />
-          </a>
-        </Button>
-        <Button className="bg-pink-500 hover:bg-pink-600" asChild>
-          <a href="https://www.instagram.com/eric.h2s/" target="_blank">
-            <FontAwesomeIcon
-              icon={faInstagram}
-              color="white"
-              className="w-fit"
-            />
-          </a>
-        </Button>
-        <Button className="bg-black hover:bg-gray-800/90" asChild>
-          <a href="https://www.tiktok.com/@eric_h2s" target="_blank">
-            <FontAwesomeIcon icon={faTiktok} color="white" className="w-fit" />
-          </a>
-        </Button>
+        {contacts.map((contact) => (
+          <TooltipProvider delayDuration={0}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  className={cn(
+                    "flex h-11 w-11 items-center justify-center rounded-full p-3 md:h-12 md:w-12",
+                    contact.className,
+                  )}
+                  asChild
+                >
+                  <a href={contact.href} target="_blank">
+                    <FontAwesomeIcon icon={contact.icon} className="w-fit" />
+                  </a>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent sideOffset={6}>
+                <p>{contact.name}</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        ))}
       </section>
     </main>
   );
