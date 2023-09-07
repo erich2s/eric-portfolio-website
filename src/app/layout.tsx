@@ -1,9 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Header from "@/components/header";
+import BackToTop from "@/components/back-to-top";
 
-const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Eric Huang | Personal",
@@ -23,7 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <Header />
-        {children}
+        <main className="container lg:px-28">{children}</main>
+        <BackToTop />
       </body>
     </html>
   );
