@@ -56,11 +56,13 @@ const contacts: Contact[] = [
 ];
 export default function ContactList({
   delayOffset = 0,
+  showWhenInView = true,
 }: {
   delayOffset?: number;
+  showWhenInView?: boolean;
 }) {
   return (
-    <MotionList delayOffset={delayOffset}>
+    <MotionList delayOffset={delayOffset} showWhenInView={showWhenInView}>
       {contacts.map((contact, index) => (
         <TooltipProvider delayDuration={0} key={index}>
           <Tooltip>

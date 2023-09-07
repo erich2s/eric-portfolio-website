@@ -16,7 +16,6 @@ export default function MotionDiv({
   const isInView = useInView(ref, { once: true });
   useEffect(() => {
     if (isInView) {
-      console.log("isInView");
       controls.start({ y: 0, opacity: 1 });
     }
   }, [controls, isInView]);

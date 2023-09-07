@@ -1,6 +1,36 @@
 import MotionDiv from "@/components/motion-div";
 import MotionList from "@/components/motion-list";
 import Image from "next/image";
+import reactIcon from "@/assets/icons/react.png";
+import nextjsIcon from "@/assets/icons/next-js.png";
+import vueIcon from "@/assets/icons/vue.png";
+import typescriptIcon from "@/assets/icons/typescript.png";
+import javascriptIcon from "@/assets/icons/javascript.png";
+import pythonIcon from "@/assets/icons/python.png";
+import javaIcon from "@/assets/icons/java.png";
+import html5Icon from "@/assets/icons/html5.png";
+import tailwindcssIcon from "@/assets/icons/tailwindcss.png";
+import shadcnuiIcon from "@/assets/icons/shadcn-ui.png";
+import pnpmIcon from "@/assets/icons/pnpm.png";
+import viteIcon from "@/assets/icons/vite.png";
+import prettierIcon from "@/assets/icons/prettier.png";
+import nodejsIcon from "@/assets/icons/nodejs.png";
+import nestjsIcon from "@/assets/icons/nest-js.png";
+import expressjsIcon from "@/assets/icons/express-js.png";
+import prismaIcon from "@/assets/icons/prisma.png";
+import mysqlIcon from "@/assets/icons/mysql.png";
+import springbootIcon from "@/assets/icons/springboot.png";
+import dockerIcon from "@/assets/icons/docker.png";
+import gitIcon from "@/assets/icons/git.png";
+import ubuntuIcon from "@/assets/icons/ubuntu.svg";
+import macosIcon from "@/assets/icons/macos.png";
+import vscodeIcon from "@/assets/icons/vscode.png";
+import arcIcon from "@/assets/icons/arc.png";
+import warpIcon from "@/assets/icons/warp.webp";
+import postmanIcon from "@/assets/icons/postman.svg";
+import davinciResolveIcon from "@/assets/icons/davinci-resolve.png";
+import lightroomIcon from "@/assets/icons/lightroom.png";
+
 export default function skills() {
   const data = [
     {
@@ -8,48 +38,47 @@ export default function skills() {
       skills: [
         {
           name: "React.js",
-          icon: "/icons/react.png",
+          icon: reactIcon,
         },
         {
           name: "Next.js",
-          icon: "/icons/next-js.png",
+          icon: nextjsIcon,
         },
         {
           name: "Vue.js",
-          icon: "/icons/vue.png",
+          icon: vueIcon,
         },
-
         {
           name: "TypeScript",
-          icon: "/icons/typescript.png",
+          icon: typescriptIcon,
         },
         {
           name: "JavaScript",
-          icon: "/icons/javascript.png",
+          icon: javascriptIcon,
         },
         {
           name: "HTML5",
-          icon: "/icons/html5.png",
+          icon: html5Icon,
         },
         {
           name: "Tailwind CSS",
-          icon: "/icons/tailwindcss.png",
+          icon: tailwindcssIcon,
         },
         {
           name: "shadcn/ui",
-          icon: "/icons/shadcn-ui.png",
+          icon: shadcnuiIcon,
         },
         {
           name: "PNPM",
-          icon: "/icons/pnpm.png",
+          icon: pnpmIcon,
         },
         {
           name: "Vite",
-          icon: "/icons/vite.png",
+          icon: viteIcon,
         },
         {
           name: "Prettier",
-          icon: "/icons/prettier.png",
+          icon: prettierIcon,
         },
       ],
     },
@@ -58,28 +87,27 @@ export default function skills() {
       skills: [
         {
           name: "Node.js",
-          icon: "/icons/nodejs.png",
+          icon: nodejsIcon,
         },
         {
           name: "Nest.js",
-          icon: "/icons/nest-js.png",
+          icon: nestjsIcon,
         },
         {
           name: "Express.js",
-          icon: "/icons/express-js.png",
+          icon: expressjsIcon,
         },
         {
           name: "Prisma ORM",
-          icon: "/icons/prisma.png",
+          icon: prismaIcon,
         },
         {
           name: "MySQL",
-          icon: "/icons/mysql.png",
+          icon: mysqlIcon,
         },
-
         {
           name: "Spring Boot (a lil' bit..)",
-          icon: "/icons/springboot.png",
+          icon: springbootIcon,
         },
       ],
     },
@@ -88,15 +116,15 @@ export default function skills() {
       skills: [
         {
           name: "Docker",
-          icon: "/icons/docker.png",
+          icon: dockerIcon,
         },
         {
           name: "Git",
-          icon: "/icons/git.png",
+          icon: gitIcon,
         },
         {
           name: "Ubuntu",
-          icon: "/icons/ubuntu.svg",
+          icon: ubuntuIcon,
         },
       ],
     },
@@ -105,19 +133,19 @@ export default function skills() {
       skills: [
         {
           name: "TypeScript",
-          icon: "/icons/typescript.png",
+          icon: typescriptIcon,
         },
         {
           name: "JavaScript",
-          icon: "/icons/javascript.png",
+          icon: javascriptIcon,
         },
         {
           name: "Python",
-          icon: "/icons/python.png",
+          icon: pythonIcon,
         },
         {
           name: "Java",
-          icon: "/icons/java.png",
+          icon: javaIcon,
         },
       ],
     },
@@ -126,23 +154,23 @@ export default function skills() {
       skills: [
         {
           name: "macOS",
-          icon: "/icons/macos.png",
+          icon: macosIcon,
         },
         {
           name: "VS Code",
-          icon: "/icons/vscode.png",
+          icon: vscodeIcon,
         },
         {
           name: "Arc",
-          icon: "/icons/arc.png",
+          icon: arcIcon,
         },
         {
           name: "Warp Terminal",
-          icon: "/icons/warp.webp",
+          icon: warpIcon,
         },
         {
           name: "Postman",
-          icon: "/icons/postman.svg",
+          icon: postmanIcon,
         },
       ],
     },
@@ -151,15 +179,16 @@ export default function skills() {
       skills: [
         {
           name: "DaVinci Resolve",
-          icon: "/icons/davinci-resolve.png",
+          icon: davinciResolveIcon,
         },
         {
           name: "Lightroom",
-          icon: "/icons/lightroom.png",
+          icon: lightroomIcon,
         },
       ],
     },
   ];
+
   return (
     <section
       id="skills"
@@ -191,7 +220,7 @@ function SkillCard({ icon, name }: { icon: string; name: string }) {
     <div className="group rounded-xl border-none p-5 text-center shadow-none">
       <div className="flex flex-col items-center gap-2">
         <div className="flex h-16 w-16 items-center justify-center ">
-          <Image src={icon} alt={name} width={64} height={64} />
+          <Image src={icon} alt={name} priority />
         </div>
         <p>{name}</p>
       </div>

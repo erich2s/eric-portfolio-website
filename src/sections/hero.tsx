@@ -14,8 +14,6 @@ export default function hero() {
         <MotionDiv>
           <Image
             src={memoji}
-            width={160}
-            height={160}
             alt="memoji"
             priority
             className="md:h-[180px] md:w-[180px]"
@@ -40,7 +38,7 @@ export default function hero() {
         </MotionDiv>
       </div>
       <div className="my-8">
-        <ContactList delayOffset={1.5} />
+        <ContactList delayOffset={1.45} showWhenInView={false} />
       </div>
     </section>
   );

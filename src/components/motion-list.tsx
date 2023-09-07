@@ -6,17 +6,23 @@ export default function MotionList({
   children,
   className,
   delayOffset = 0,
+  showWhenInView = true,
 }: {
   children: React.ReactNode[];
   className?: string;
   delayOffset?: number;
+  showWhenInView?: boolean;
 }) {
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   useEffect(() => {
-    if (isInView) {
-      console.log("isInView");
+    if (!showWhenInView) {
+      controls.start("visible");
+    }
+  }, []);
+  useEffect(() => {
+    if (isInView && showWhenInView) {
       controls.start("visible");
     }
   }, [isInView]);
