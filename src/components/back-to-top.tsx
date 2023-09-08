@@ -47,6 +47,7 @@ export default function BackToTop() {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               className="h-11 w-11 rounded-full p-0"
+              aria-label="Press to return to top"
             >
               <ChevronUp />
             </Button>

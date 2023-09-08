@@ -1,5 +1,3 @@
-import Image from "next/image";
-import memoji from "@/assets/memoji.gif";
 import ContactList from "@/components/contact-list";
 import MotionText from "@/components/motion-text";
 import MotionDiv from "@/components/motion-div";
@@ -10,15 +8,15 @@ export default function hero() {
       <h1 className="mb-4 text-[1.4rem] md:text-[2rem]">
         <MotionText delayOffset={0}>Hi, I'm Eric Huang! 👋</MotionText>
       </h1>
-      <div className="overflow-hidden rounded-full p-4">
+      <div className="overflow-hidden rounded-full p-3 md:p-4">
         <MotionDiv>
-          <Image
-            src={memoji}
-            alt="memoji"
-            priority
-            width={160}
-            height={160}
-            className="md:h-[180px] md:w-[180px]"
+          <video
+            src={"/animoji.mp4"}
+            className="h-[170px] w-[170px] md:h-[190px] md:w-[190px]"
+            muted
+            autoPlay
+            loop
+            playsInline
           />
         </MotionDiv>
       </div>

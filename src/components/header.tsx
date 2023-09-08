@@ -1,5 +1,11 @@
 "use client";
 import Link from "next/link";
+import localFont from "next/font/local";
+import { cn } from "@/lib/utils";
+const goldenSignature = localFont({
+  src: "../assets/GoldenSignature.otf",
+  display: "swap",
+});
 
 export default function Header() {
   const links = ["about", "skills", "contact"];
@@ -7,7 +13,12 @@ export default function Header() {
     <>
       <nav className="justify-centerpy-2 flex w-full select-none py-2 font-light md:px-28">
         <div className="container flex flex-col items-center justify-between md:flex-row">
-          <div id="logo">
+          <div
+            className={cn(
+              "text-5xl drop-shadow-2xl",
+              goldenSignature.className,
+            )}
+          >
             <Link href="/">Eric Huang</Link>
           </div>
           <div className="nav-links flex gap-x-8 text-xs md:text-base">

@@ -78,12 +78,6 @@
   font-family: "GoldenSignature";
   src: url("/GoldenSignature.otf");
 }
-#logo {
-  font-family: "GoldenSignature";
-  font-size: 3rem;
-  color: var(--primary-foreground);
-  @apply drop-shadow-2xl;
-}
 h1 {
   font-size: 2rem;
   font-weight: 700;

@@ -73,8 +73,13 @@ export default function ContactList({
                   contact.className,
                 )}
                 asChild
+                aria-label={contact.name}
               >
-                <a href={contact.href} target="_blank">
+                <a
+                  href={contact.href}
+                  target="_blank"
+                  aria-label={contact.name}
+                >
                   <FontAwesomeIcon icon={contact.icon} className="w-fit" />
                 </a>
               </Button>
