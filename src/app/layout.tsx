@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Header from "@/components/header";
 import BackToTop from "@/components/back-to-top";
-import { Suspense } from "react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
