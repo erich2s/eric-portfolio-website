@@ -16,6 +16,8 @@ export default function hero() {
             src={memoji}
             alt="memoji"
             priority
+            width={160}
+            height={160}
             className="md:h-[180px] md:w-[180px]"
           />
         </MotionDiv>
