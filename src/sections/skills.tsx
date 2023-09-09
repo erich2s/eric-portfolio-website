@@ -202,7 +202,7 @@ export default function skills() {
           <MotionDiv key={index}>
             <div className="mb-6 md:px-2">
               <h3>{item.title}</h3>
-              <MotionList className="flex flex-wrap justify-center gap-0 md:gap-5 md:px-6">
+              <MotionList className="flex flex-wrap justify-evenly gap-0 md:gap-5 md:px-6 lg:justify-center">
                 {item.skills.map((skill) => (
                   <SkillCard key={skill.name} {...skill} />
                 ))}
@@ -219,7 +219,7 @@ function SkillCard({ icon, name }: { icon: string; name: string }) {
   return (
     <div className="group rounded-xl border-none p-5 text-center shadow-none">
       <div className="flex flex-col items-center gap-2">
-        <div className="flex h-16 w-16 items-center justify-center ">
+        <div className="flex h-16 w-16 items-center justify-center">
           <Image src={icon} alt={name} priority />
         </div>
         <p>{name}</p>

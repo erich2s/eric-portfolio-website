@@ -35,6 +35,7 @@ export default function BackToTop() {
 
   return (
     <motion.div
+      initial="hidden"
       animate={controls}
       variants={variants}
       className="fixed bottom-5 right-5"
