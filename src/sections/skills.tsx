@@ -30,7 +30,7 @@ import warpIcon from "@/assets/icons/warp.webp";
 import postmanIcon from "@/assets/icons/postman.svg";
 import davinciResolveIcon from "@/assets/icons/davinci-resolve.png";
 import lightroomIcon from "@/assets/icons/lightroom.png";
-
+import ExpoIcon from "@/assets/icons/expo.png";
 export default function skills() {
   const data = [
     {
@@ -108,6 +108,19 @@ export default function skills() {
         {
           name: "Spring Boot (a lil' bit..)",
           icon: springbootIcon,
+        },
+      ],
+    },
+    {
+      title: "Mobile Development",
+      skills: [
+        {
+          name: "React Native",
+          icon: reactIcon,
+        },
+        {
+          name: "Expo",
+          icon: ExpoIcon,
         },
       ],
     },

@@ -11,13 +11,15 @@ export default function hero() {
       <div className="overflow-hidden rounded-full p-3 md:p-4">
         <MotionDiv>
           <video
-            src={"/animoji.mp4"}
             className="h-[170px] w-[170px] md:h-[190px] md:w-[190px]"
             muted
             autoPlay
             loop
             playsInline
-          />
+          >
+            <source src={"/animoji.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </MotionDiv>
       </div>
       <h1>
