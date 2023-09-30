@@ -25,7 +25,7 @@ const contacts: Contact[] = [
   {
     name: "Email",
     className: "bg-yellow-500 hover:bg-yellow-600",
-    href: "mailto:tarot1754443943@gmail.com",
+    href: "mailto:erich2s0103@gmail.com",
     icon: faEnvelope,
   },
 
