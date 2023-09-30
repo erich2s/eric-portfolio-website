@@ -31,6 +31,7 @@ import postmanIcon from "@/assets/icons/postman.svg";
 import davinciResolveIcon from "@/assets/icons/davinci-resolve.png";
 import lightroomIcon from "@/assets/icons/lightroom.png";
 import ExpoIcon from "@/assets/icons/expo.png";
+import githubActionsIcon from "@/assets/icons/github-actions.png";
 export default function skills() {
   const data = [
     {
@@ -128,12 +129,16 @@ export default function skills() {
       title: "DevOps",
       skills: [
         {
-          name: "Docker",
-          icon: dockerIcon,
-        },
-        {
           name: "Git",
           icon: gitIcon,
+        },
+        {
+          name: "GitHub Actions",
+          icon: githubActionsIcon,
+        },
+        {
+          name: "Docker",
+          icon: dockerIcon,
         },
         {
           name: "Ubuntu",
