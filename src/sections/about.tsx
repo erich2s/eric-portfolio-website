@@ -1,5 +1,3 @@
-import Image from "next/image";
-import photo from "@/assets/photo.jpeg";
 import MotionDiv from "@/components/motion-div";
 
 export default function about() {
@@ -43,10 +41,9 @@ export default function about() {
       </div>
       <div className="lg:order-2 lg:w-1/3">
         <MotionDiv delayOffset={0.4}>
-          <Image
-            src={photo}
+          <img
+            src="/photo.jpeg"
             alt="photo"
-            priority
             className="w-[350px] min-w-[300px] rounded-xl transition-all hover:rotate-3 hover:scale-105"
           />
         </MotionDiv>

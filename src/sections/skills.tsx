@@ -32,6 +32,7 @@ import davinciResolveIcon from "@/assets/icons/davinci-resolve.png";
 import lightroomIcon from "@/assets/icons/lightroom.png";
 import ExpoIcon from "@/assets/icons/expo.png";
 import githubActionsIcon from "@/assets/icons/github-actions.png";
+import trpcIcon from "@/assets/icons/trpc.svg";
 export default function skills() {
   const data = [
     {
@@ -50,6 +51,10 @@ export default function skills() {
           icon: vueIcon,
         },
         {
+          name: "tRPC",
+          icon: trpcIcon,
+        },
+        {
           name: "TypeScript",
           icon: typescriptIcon,
         },
@@ -65,6 +70,7 @@ export default function skills() {
           name: "Tailwind CSS",
           icon: tailwindcssIcon,
         },
+
         {
           name: "shadcn/ui",
           icon: shadcnuiIcon,
