@@ -12,6 +12,16 @@ export const metadata: Metadata = {
     { name: "黄士崧", url: "https://github.com/erich2s" },
   ],
   description: "Eric Huang's personal portfolio website, 黄士崧的个人网站",
+  openGraph: {
+    images: [
+      {
+        url: "/photo.jpeg",
+        alt: "Eric Huang | Personal",
+        width: 640,
+        height: 800,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
