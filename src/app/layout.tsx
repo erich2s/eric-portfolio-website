@@ -22,6 +22,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://www.erichuang.art",
+  },
 };
 
 export default function RootLayout({
