@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   ],
   description: "Eric Huang's personal portfolio website, 黄士崧的个人网站",
   openGraph: {
+    title: "Eric Huang | Personal",
+    description: "Eric Huang's personal portfolio website, 黄士崧的个人网站",
     images: [
       {
         url: "/photo.jpeg",
