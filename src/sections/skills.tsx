@@ -18,8 +18,7 @@ import nodejsIcon from "@/assets/icons/nodejs.png";
 import nestjsIcon from "@/assets/icons/nest-js.png";
 import expressjsIcon from "@/assets/icons/express-js.png";
 import prismaIcon from "@/assets/icons/prisma.png";
-import mysqlIcon from "@/assets/icons/mysql.png";
-import springbootIcon from "@/assets/icons/springboot.png";
+import postgresIcon from "@/assets/icons/postgres.png";
 import dockerIcon from "@/assets/icons/docker.png";
 import gitIcon from "@/assets/icons/git.png";
 import ubuntuIcon from "@/assets/icons/ubuntu.svg";
@@ -93,10 +92,6 @@ export default function skills() {
       title: "Backend Development",
       skills: [
         {
-          name: "Node.js",
-          icon: nodejsIcon,
-        },
-        {
           name: "Nest.js",
           icon: nestjsIcon,
         },
@@ -105,16 +100,16 @@ export default function skills() {
           icon: expressjsIcon,
         },
         {
+          name: "Node.js",
+          icon: nodejsIcon,
+        },
+        {
           name: "Prisma ORM",
           icon: prismaIcon,
         },
         {
-          name: "MySQL",
-          icon: mysqlIcon,
-        },
-        {
-          name: "Spring Boot (a lil' bit..)",
-          icon: springbootIcon,
+          name: "PostgreSQL",
+          icon: postgresIcon,
         },
       ],
     },

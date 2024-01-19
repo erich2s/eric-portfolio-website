@@ -15,8 +15,8 @@ export default function about() {
             <p>
               Hello, I'm Eric Huang and my Chinese is
               <span className="whitespace-nowrap"> 黄士崧(huáng shì sōng)</span>
-              . I'm an independent <b>Node.JS</b> Full-Stack developer based in
-              Nanning, China.
+              . I'm an independent <b>TypeScript Full-Stack</b> developer based
+              in Nanning, China.
             </p>
           </MotionDiv>
           <MotionDiv delayOffset={0.5}>

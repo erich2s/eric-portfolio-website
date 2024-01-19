@@ -34,8 +34,8 @@ export default function hero() {
         </MotionDiv>
         <MotionDiv delayOffset={1.4}>
           <p>
-            Just an indie<b> Node.JS </b>developer who loves to build something
-            cool.
+            Just an indie<b> ✨ TypeScript Full-Stack </b>developer who loves to
+            build something cool.
           </p>
         </MotionDiv>
       </div>
