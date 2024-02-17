@@ -1,12 +1,12 @@
 # Eric Huang Personal Portfolio Website 🧑🏻‍💻
 
-https://erichuang.art
+Link: [erichuang.art](https://erichuang.art)
 
 A super clean personal portfolio website, built with:
 
-- Next.js 13
+- Next.js 14
 - TailwindCSS
 - Framer-Motion
 - Shadcn/ui
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](./screenshot.png)
