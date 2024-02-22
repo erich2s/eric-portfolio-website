@@ -5,11 +5,11 @@ import Skills from "@/sections/skills";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <About />
       <Skills />
       <Contact />
-    </>
+    </div>
   );
 }
