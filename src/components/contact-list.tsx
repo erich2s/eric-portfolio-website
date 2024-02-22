@@ -50,7 +50,7 @@ const contacts: Contact[] = [
   {
     name: "TikTok",
     className: "bg-black hover:bg-gray-800/90",
-    href: "https://tiktok.com/@eric_h2s",
+    href: "https://tiktok.com/@erich2s",
     icon: faTiktok,
   },
 ];
