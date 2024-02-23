@@ -24,32 +24,32 @@ type Contact = {
 const contacts: Contact[] = [
   {
     name: "Email",
-    className: "bg-yellow-500 hover:bg-yellow-600",
+    className: "bg-yellow-500 dark:text-slate-300 hover:bg-yellow-600",
     href: "mailto:erich2s0103@gmail.com",
     icon: faEnvelope,
   },
 
   {
     name: "X",
-    className: "bg-black hover:bg-gray-800/90",
+    className: "bg-black dark:bg-slate-300 hover:bg-gray-800/90",
     href: "https://twitter.com/erich2s",
     icon: faXTwitter,
   },
   {
     name: "Github",
-    className: "bg-black hover:bg-gray-800/90",
+    className: "bg-black dark:bg-slate-300 hover:bg-gray-800/90",
     href: "https://github.com/erich2s",
     icon: faGithub,
   },
   {
     name: "Instagram",
-    className: "bg-pink-500 hover:bg-pink-600",
+    className: "bg-pink-500 dark:bg-pink-400 hover:bg-pink-600",
     href: "https://instagram.com/eric.h2s/",
     icon: faInstagram,
   },
   {
     name: "TikTok",
-    className: "bg-black hover:bg-gray-800/90",
+    className: "bg-black dark:bg-slate-300 hover:bg-gray-800/90",
     href: "https://tiktok.com/@erich2s",
     icon: faTiktok,
   },
