@@ -4,6 +4,8 @@ import { Montserrat } from "next/font/google";
 import Header from "@/components/header";
 import BackToTop from "@/components/back-to-top";
 import GridBackground from "@/components/grid-background";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ModeToggle } from "@/components/ModeToggle";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -39,10 +41,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <Header />
-        <GridBackground />
-        <main className="container overflow-x-hidden lg:px-28">{children}</main>
-        <BackToTop />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {/* <ModeToggle /> */}
+          <Header />
+          <GridBackground />
+          <main className="container overflow-x-hidden lg:px-28">
+            {children}
+          </main>
+          <BackToTop />
+        </ThemeProvider>
       </body>
     </html>
   );

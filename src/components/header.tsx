@@ -2,6 +2,7 @@
 import Link from "next/link";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "./ModeToggle";
 const goldenSignature = localFont({
   src: "../assets/GoldenSignature.otf",
   display: "swap",
@@ -11,7 +12,7 @@ export default function Header() {
   const links = ["about", "skills", "contact"];
   return (
     <>
-      <nav className="justify-centerpy-2 flex w-full select-none pt-6 font-light md:px-28 md:pb-2">
+      <nav className="justify-centerpy-2 flex w-full select-none pt-6 font-light  md:px-28 md:pb-2">
         <div className="container flex flex-col items-center justify-between md:flex-row">
           <div
             className={cn(
@@ -35,6 +36,9 @@ export default function Header() {
                 {link.charAt(0).toUpperCase() + link.slice(1)}
               </span>
             ))}
+            <span className="">
+              <ModeToggle />
+            </span>
           </div>
         </div>
       </nav>

@@ -32,6 +32,7 @@ import lightroomIcon from "@/assets/icons/lightroom.png";
 import ExpoIcon from "@/assets/icons/expo.png";
 import githubActionsIcon from "@/assets/icons/github-actions.png";
 import trpcIcon from "@/assets/icons/trpc.svg";
+import { cn } from "@/lib/utils";
 export default function skills() {
   const data = [
     {
@@ -234,14 +235,22 @@ export default function skills() {
   );
 }
 
-function SkillCard({ icon, name }: { icon: string; name: string }) {
+function SkillCard({
+  icon,
+  name,
+  className,
+}: {
+  icon: string;
+  name: string;
+  className?: string;
+}) {
   return (
     <div className="group rounded-xl border-none p-5 text-center shadow-none transition-all duration-200 ease-linear hover:scale-110 hover:drop-shadow-xl">
       <div className="flex flex-col items-center gap-2">
         <div className="flex h-16 w-16 items-center justify-center">
           <Image src={icon} alt={name} priority />
         </div>
-        <p>{name}</p>
+        <p className={cn("", className)}>{name}</p>
       </div>
     </div>
   );
