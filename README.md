@@ -1,6 +1,6 @@
 # Eric Huang Personal Portfolio Website 🧑🏻‍💻
 
-Link: [erichuang.art](https://erichuang.art)
+Link: [erichuang.top](https://erichuang.top)
 
 A super clean personal portfolio website, built with:
 
