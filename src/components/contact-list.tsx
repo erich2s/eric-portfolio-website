@@ -15,6 +15,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 type Contact = {
   name: string;
   className: string;
@@ -75,13 +76,13 @@ export default function ContactList({
                 asChild
                 aria-label={contact.name}
               >
-                <a
+                <Link
                   href={contact.href}
                   target="_blank"
                   aria-label={contact.name}
                 >
-                  <FontAwesomeIcon icon={contact.icon} className="w-fit" />
-                </a>
+                  <FontAwesomeIcon icon={contact.icon} className="size-6" />
+                </Link>
               </Button>
             </TooltipTrigger>
             <TooltipContent sideOffset={6}>
