@@ -10,3 +10,6 @@ A super clean personal portfolio website, built with:
 - Shadcn/ui
 
 ![Screenshot](./screenshot.png)
+
+## Support:
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
